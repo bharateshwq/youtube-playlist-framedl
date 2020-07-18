@@ -13,7 +13,7 @@ Enter the ID of the playlist you want to exract faces from
               
 Enter your Google APIKEY 
       
-   Incase you dont have one:
+   If you don't have one:
                https://developers.google.com/places/web-service/get-api-key
               
 
