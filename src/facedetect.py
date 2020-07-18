@@ -50,10 +50,6 @@ ref_y = 960/2
 ref_x = 1920/2
 
 
-cv2.line(img, ((x+righteye_x), (y+righteye_y)),
-         ((x+lefteye_x), (y+lefteye_y)), (0, 200, 200), 3)
-
-
 trans_x = (ref_x-(x+righteye_x))
 trans_y = (ref_y-(y+righteye_y))
 
