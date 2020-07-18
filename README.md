@@ -3,14 +3,16 @@ Script that intelligently detects faces from videos of the given playlist and Do
 Run auto.sh in src
 
 Enter the ID of the playlist you want to exract faces from
-     Example:
+     
+   Example:
               https://www.youtube.com/playlist?list=UUBJycsmduvYEL83R_U4JriQ  
               In this link to MKBHD's Playlist
               UUBJycsmduvYEL83R_U4JriQ   is the ID to be entered
               
               
 Enter your Google APIKEY 
-      Incase you dont have one:
+      
+   Incase you dont have one:
                https://developers.google.com/places/web-service/get-api-key
               
 
