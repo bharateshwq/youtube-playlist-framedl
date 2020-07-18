@@ -20,14 +20,22 @@ except:
     print("0")
     sys.exit()
 
-eyes = eye_cascade.detectMultiScale(roi_gray, 1.1, 4)
+try:
+    eyes = eye_cascade.detectMultiScale(roi_gray, 1.3, 4)
+except:
+    print("0")
+    sys.exit()
 count = 0
-for (ex, ey, ew, eh) in eyes:
-    if count == 0:
-        eye_1 = (ex, ey, ew, eh)
-    elif count == 1:
-        eye_2 = (ex, ey, ew, eh)
-    count = count + 1
+try:
+    for (ex, ey, ew, eh) in eyes:
+        if count == 0:
+            eye_1 = (ex, ey, ew, eh)
+        elif count == 1:
+            eye_2 = (ex, ey, ew, eh)
+        count = count + 1
+except:
+    print("0")
+    sys.exit()
 if eye_1[0] < eye_2[0]:
     lefteye = eye_1
     righteye = eye_2
