@@ -1,6 +1,7 @@
 # youtube-playlist-framedl
 Script that intelligently detects faces from videos of the given playlist and Downloads a frame from each video 
-Run auto.sh in src
+
+                                                  Run auto.sh in src
 
 Enter the ID of the playlist you want to exract faces from
      
