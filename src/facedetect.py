@@ -87,10 +87,16 @@ widthmar2 = int((width*ratio*3)/4)
 crop_img = translation[heightmar1:heightmar2, widthmar1:widthmar2]
 
 final = cv2.resize(crop_img, (1920, 960))
+textpos = (10, 950)
+color = (192, 192, 192)
+fontface = cv2.FONT_HERSHEY_SIMPLEX
+text = input_image[:-5]
+finaltexted = cv2.putText(final, text, textpos, fontface,
+                          1, color, 1, cv2.LINE_AA, False)
 
 outputdir = './finalframes/'
 outputdo = outputdir+input_image
-writeStatus = cv2.imwrite(outputdo, final)
+writeStatus = cv2.imwrite(outputdo, finaltexted)
 if writeStatus is True:
     print("1")
 else:
